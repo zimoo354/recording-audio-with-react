@@ -1,0 +1,1 @@
+export const API_URL = 'https://atexto.zimoo354.mx/api';

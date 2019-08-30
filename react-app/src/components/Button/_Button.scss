@@ -1,0 +1,27 @@
+button {
+    border: 1px solid #3593E8;
+    color: white; 
+    padding: 0.5rem 1.5rem;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: 100ms;
+    cursor: pointer;
+    background-color: #3593E8;
+
+    &.secondary {
+        border: 1px solid #666666;
+        background-color: #666666;
+        &:hover {
+            background-color: #606060;
+        }
+    }
+
+    &:hover {
+        background-color: #1984E8;
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

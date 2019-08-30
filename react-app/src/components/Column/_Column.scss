@@ -1,0 +1,7 @@
+$gridColumns: 12;
+
+@for $i from 1 through $gridColumns {
+    .cols-#{$i} {
+        width:percentage($i/$gridColumns);
+    }
+}

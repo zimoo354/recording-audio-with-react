@@ -1,0 +1,15 @@
+.row {
+    position: relative;
+    max-width: 72.5rem;
+    display: block;
+    margin: 0 auto;
+
+    [class^="cols"] {
+        min-height: 0.125rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; 
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: .5rem;
+    }	
+}

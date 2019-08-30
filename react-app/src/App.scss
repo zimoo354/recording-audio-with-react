@@ -1,0 +1,44 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 100%;
+
+	.App {
+		padding: 1rem;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 1rem 0;
+    }
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+input, textarea {
+	width: 100% !important;
+	border-radius: 2px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    resize: none;
+}
+
+@import './components/Row/_Row.scss';
+@import './components/Column/_Column.scss';
+@import './components/Button/_Button.scss';
+@import './components/Modal/_Modal.scss';
+@import './components/Table/_Table.scss';

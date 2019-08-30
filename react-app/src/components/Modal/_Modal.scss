@@ -1,0 +1,55 @@
+.modal {
+    position: fixed;
+    height: 280px;
+    width: 420px;
+    top: calc(50% - 210px);
+    left: calc(50% - 210px);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+    background-color: white;
+    display: none;
+
+    &.open {
+        display: block !important;
+    }
+
+    .content: {
+        max-width: calc(420px - 2rem);
+        max-height: calc(280px - 2rem);
+        position: relative;
+    }
+
+    .close-btn {
+        background: #dddddd;
+        height: 24px;
+        width: 24px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bolder;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        cursor: pointer;
+    }
+
+    + .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 990;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+
+        &.open {
+            display: block !important;
+        }
+    }
+}
